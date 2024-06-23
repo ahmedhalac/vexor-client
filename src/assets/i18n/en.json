@@ -1,4 +1,8 @@
 {
   "title": "Vexor",
-  "lbl-login": "Login"
+  "lbl-login": "Login",
+  "lbl-email": "Email",
+  "lbl-password": "Password",
+  "lbl-enter-email": "Enter email",
+  "lbl-enter-password": "Enter password"
 }
