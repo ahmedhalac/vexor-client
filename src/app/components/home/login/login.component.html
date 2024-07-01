@@ -1,34 +1,29 @@
-<div class="component">
+<div class="container">
   <div class="login-wrapper">
-    <div class="header">
-      <div class="vexor-logo"></div>
-      <div class="vexor-title">
-        <span>{{'lbl-login' | translate}}</span>
-      </div>
+    <div class="vexor-title">
+      <span>{{'lbl-login' | translate}}</span>
     </div>
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
       <div class="form-row">
-        <label for="Email">{{'lbl-email' | translate}}</label>
-        <input type="email" formControlName="email">
+        <input type="email" formControlName="email" placeholder="Email">
         <div *ngIf="submitted && f['email'].errors" class="text-danger">
           <div *ngIf="f['email'].errors['required']">Email is required.</div>
           <div *ngIf="f['email'].errors['email']">Email must be a valid email address.</div>
         </div>
       </div>
       <div class="form-row">
-        <label for="Password">{{'lbl-password' | translate}}</label>
-        <input type="password" formControlName="password">
+        <input type="password" formControlName="password" placeholder="Password">
         <div *ngIf="submitted && f['password'].errors" class="text-danger">
           <div *ngIf="f['password'].errors['required']">Password is required.</div>
           <!-- <div *ngIf="loginForm.controls['password'].errors['minLength']">Password must be at least 6 characters long.
           </div> -->
         </div>
       </div>
-      <button type="submit">{{'lbl-login' | translate}}</button>
+      <button class="submit-btn" type="submit">{{'lbl-signin-with-email' | translate}}</button>
     </form>
     <div class="register">
-      <span>Not having account?</span>
-      <a routerLink="/register">Register</a>
+      <span>{{'lbl-not-have-acc' | translate}}</span>
+      <a routerLink="/register">{{'lbl-get-started' | translate}}</a>
     </div>
   </div>
 </div>

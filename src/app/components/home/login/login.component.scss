@@ -1,10 +1,76 @@
-.component {
-  max-width: 500px;
+@import "../../../../sass/colors.scss";
+
+.container {
   margin: 0 auto;
-  border: 1px solid black;
-  border-radius: 7px;
+  border-radius: 20px;
+  background-color: $vx-primary-white;
+  width: 100%;
 
   .login-wrapper {
-    padding: 32px;
+    padding: 30px 40px 40px;
+    width: 100%;
+
+    .vexor-title {
+      font-size: 32px;
+      color: $vx-secondary-black;
+      font-weight: 400;
+      line-height: 32px;
+      padding-bottom: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    form {
+      .form-row {
+        padding: 0 0 24px;
+
+        input {
+          padding: 16px;
+          width: 450px;
+          background-color: $vx-white-variation;
+          border: none;
+          border-radius: 8px;
+        }
+
+        input::placeholder {
+          font-weight: 400;
+          font-size: 16px;
+          color: $vx-light-gray;
+        }
+      }
+
+      .submit-btn {
+        width: 450px;
+        background-color: $vx-primary-background;
+        padding: 16px;
+        border-radius: 8px;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .submit-btn:hover {
+        cursor: pointer;
+      }
+    }
+
+    .register {
+      font-size: 16px;
+      padding-top: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 5px;
+
+      span {
+        color: $vx-gray;
+      }
+
+      a {
+        color: $vx-secondary-background;
+        text-decoration: none;
+      }
+    }
   }
 }

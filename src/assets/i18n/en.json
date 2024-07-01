@@ -1,8 +1,11 @@
 {
   "title": "Vexor",
-  "lbl-login": "Login",
+  "lbl-login": "Login to your account",
   "lbl-email": "Email",
   "lbl-password": "Password",
   "lbl-enter-email": "Enter email",
-  "lbl-enter-password": "Enter password"
+  "lbl-enter-password": "Enter password",
+  "lbl-not-have-acc": "Don't have and account?",
+  "lbl-signin-with-email": "Sign in with email",
+  "lbl-get-started": "Get Started"
 }
